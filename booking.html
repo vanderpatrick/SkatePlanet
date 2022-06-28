@@ -37,14 +37,70 @@
         </div>
     </nav>
     <!-- booking section -->
+    <div class="container mt-5 px-5">
+        <div class="py-5 text-center">
+            <h1>Book your class.</h1>
+            <p class="lead">Fill this form in to book your first free class.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Personal information</h4>
+        <form action="POST">
+            <div class="row g-2">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First Name :</label>
+                    <input type="text" class="form-control" placeholder="Patrick" required>
+                    <div class="invalid-feedback">
+                        valid name is requested
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last Name :</label>
+                    <input type="text" class="form-control" placeholder="Lucas van Der Flier" required>
+                    <div class="invalid-feedback">Valid last name required</div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 text-center">
+                    <label for="email" class="form-label">Enter Email :</label>
+                    <input type="email" class="form-control text-center" placeholder="Email@Emailtest.test">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <h4>Adress.</h4>
+                <div class="col-sm-6 g-3">
+                    <label for="street" class="mb-2">Input your Adress :</label>
+                    <input type="text" id="street" class="form-control mt" placeholder="0000 street test">
+                </div>
+                <div class="col-sm-6 g-3">
+                    <label for="country" class="mb-2">Choose country :</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Amsterdam</option>
+                        <option value="1">U.S.A</option>
+                        <option value="2">Ingland</option>
+                        <option value="3">Brazil</option>
+                    </select>
+                </div>
+            </div>
 
+            <div class="row mt-2">
+                <div class="col-sm-12 text-center g-3">
+                    <label for="zipCode" class="mb-2">Zipcode :</label>
+                    <input type="number" class="form-control text-center" placeholder="*********">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mt-5">
+                    <a href="#" class="btn btn-primary btn-long">Submit</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
     <!-- footer section -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <footer class="p-3 bg-dark text-white text-center fixed-bottom ">
         <div class="container">
             <p class="lead">Copyright &copy; 2021 Skate Planet</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
         </div>
     </footer>
 </body>
